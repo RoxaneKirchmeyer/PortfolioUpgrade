@@ -1,0 +1,30 @@
+:root {
+    --White : #FFFFFF;
+    --GreyBlue : #8DA7BE;
+    --LightGrey : #d9d9d9;
+    --Blue : #244461; 
+    --LightBlue : #CDE6F5;
+    --SimplonRed : #D02036;
+    --AfciBlue : #2C4B9D;
+    --Black : #000000;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a, li {
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--Black);
+}
+
+header section{
+    width: 90%;
+    margin: auto;
+}
+
+
+
+

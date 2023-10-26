@@ -1,0 +1,260 @@
+main .blue {
+    background-color: var(--Blue);
+    color: var(--White);
+    padding: 2rem 0;
+}
+
+main p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    width: 65%;
+}
+
+h2 {
+    font-family: 'Oooh Baby', cursive;
+    font-size: 3.5rem;
+    font-weight: normal;
+}
+
+h3 {
+    font-family: 'Oooh Baby', cursive;
+    font-size: 3.2rem;
+    font-weight: normal;
+    padding-left: 73rem;
+    text-shadow: 4px 2px 6px rgba(0, 0, 0, 1);
+}
+
+/* Projects */
+
+main article {
+    width: 90%;
+    margin: auto;
+}
+
+span {
+    text-decoration: underline;
+    line-height: 1.5;
+    font-weight: 100;
+}
+
+main .black {
+    background-color: var(--Black);
+    padding: 2rem 0;
+}
+
+main div {
+    background-color: var(--White);
+    padding: 2rem 0;
+}
+
+main img {
+    width: 1280px;
+    height: 500px;
+}
+
+.white img {
+    width: 900px;
+    height: 500px;
+}
+
+.white {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 2em;
+}
+
+#aboutMe {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#aboutMe p {
+    width: 50%;
+}
+
+#aboutMe img {
+    width: 50%;
+    height: 50%;
+}
+
+#aboutMe h2 {
+    width: 100%;
+}
+
+#training {
+    display: flex;
+    flex-direction: column;
+}
+
+#training figure {
+    width: 100%;
+}
+
+figure.school img {
+    width: 345px;
+    height: 236px;
+}
+
+figcaption {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    width: 100%;
+}
+
+#myProgress {
+    background-color: var(--LightGrey);
+    width: 100%;
+    border: solid 2px var(--Black);
+    padding: 0;
+}
+
+.simplon {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.afci {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#simplonBar {
+    background-color: var(--SimplonRed);
+    width: 100%;
+    border: solid 2px var(--Black);
+    color: var(--White);    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0;
+}
+
+/* #simplonBar:hover {
+    animation: progress 2s ease-in-out;
+}
+
+#afciBar:hover {
+    transform: scaleX(-2);
+    transition: 2s ease-in-out;
+} */
+
+/* add animations loading bar */
+
+#afciBar {
+    background-color: var(--AfciBlue);
+    width: 3%;
+    border: solid 2px var(--Black);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: var(--White); 
+    font-size: 1.5rem;
+    padding: 0;
+}
+
+#skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#skills img{
+    width: 100%;
+    height: 100%;
+}
+
+#skills h2 {
+    padding-left: 2em;
+}
+
+/* Contact */
+
+
+form {
+    margin-top: 50px;
+    margin-left: 20rem;
+    padding: 2rem;
+}
+
+.form {
+    width: 90%;
+    margin: auto;
+}
+
+input {
+    color: var(--White);
+    background-color: var(--Blue);
+    min-width: 100%;
+    min-height: 30px;
+    margin-top: 10px;
+    border: none;
+    padding: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem; 
+}
+
+textarea {
+    color: var(--White);
+    background-color: var(--Blue);
+    min-width: 100%;
+    min-height: 300px;
+    margin-top: 10px;
+    padding: 1.5rem;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+}
+
+button {
+    margin-top: 30px;
+    color: var(--White);
+    padding: 1.5rem;
+    border: none;
+    min-width: 50%;
+    background-color: var(--Blue);
+    cursor: pointer;
+    border-radius: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    margin-left: 6.5rem;
+    border: solid 5px var(--LightBlue);
+}
+
+label {
+    font-size: 2rem;
+}
+
+input::placeholder, textarea::placeholder {
+    color: var(--White);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;    
+}
+
+input:focus, textarea:focus {
+    color: var(--White);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem; 
+}
+
+button:hover {
+    background-color: var(--LightBlue);
+    color: var(--Black);
+    transition: ease-in-out 1s;
+    border: solid 5px var(--Blue);
+}
+
+@media screen and (max-width:390px) {
+    main {
+        margin: 0;
+        min-width: 100%;
+        text-align: center;
+    }
+
+    .blue {
+        margin: 0;
+        min-width: 100%;
+        text-align: center;
+    }
+}

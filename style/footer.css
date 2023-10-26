@@ -1,0 +1,28 @@
+footer {
+    background-color: var(--LightBlue);
+    padding: 1.5rem;
+}
+
+footer img {
+    width: 80px;
+    padding: 0.5rem;
+}
+
+footer p {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: flex-end;
+    margin-right: 1em;
+}
+
+footer div {
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+footer i {
+    font-size: 5em;
+    align-items: center;
+}
