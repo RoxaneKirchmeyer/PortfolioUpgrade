@@ -3,11 +3,38 @@ nav {
     position: fixed;
     width: 100%;
     height: 85px;
+    z-index: 1;
+}
+
+nav figure img {
+    position: absolute;
+}
+
+nav figure {
+    opacity: 1;
+}
+
+nav .logohover {
+    transition: opacity .5s;
+    opacity: 0;
+}
+nav .logohover:hover {
+    opacity: 1;
+}
+
+nav a {
+    color: var(--Black);
+    transition: ease-in-out 1s;
 }
 
 nav a:hover {
     color: var(--White);
-    transition: ease-in-out 1s;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header figure {
@@ -32,34 +59,32 @@ header ul {
     padding: 10px;
     display: flex;
     justify-content: flex-end;
-    gap: 200px;
+    gap: 3em;
     margin-right: 50px;
-}
-
-header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header section p {
-    width: 50%;
-}
-
-header div {
-    padding: 3rem 0;
-}
-
-header section img {
-    width: 525px;
-    height: 500px;
-    margin-top: 75px;
-    margin-left: -450px;
 }
 
 header section {
     display: flex;
-    padding: 8rem 0;
+    gap: 20%;
+    padding-bottom: 1em;
+}
+
+header section img {
+    width: 425px;
+    height: 400px;
+}
+
+header div {
+    width: 80%;
+}
+
+header section figure {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-top: 5em;
+    padding: 1em 0;
+    padding-top: 90px;
 }
 
 section h1 {
@@ -70,22 +95,98 @@ section h1 {
 header section p {
     margin: 1rem 0;
     font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
-nav figure img {
-    position: absolute;
-}
-
-nav figure {
-    opacity: 1;
-}
-
-nav .logohover {
-    transition: opacity .5s;
-    opacity: 0;
-}
-nav .logohover:hover {
-    opacity: 1;
+#welcome {
+    padding-top: 90px;
+    width: 100%;
 }
     
+#btn-burger {
+    display: none;
+}
+
+@media screen and (max-width:391px) {
+
+/* nav & btn burger */
+
+.main-nav-burger {
+    display: none;
+    }
+
+#btn-burger {
+    display: block;
+    position: fixed;
+    font-size: 2.8em;
+    color: var(--Black);
+    background-color: var(--GreyBlue);
+    z-index: 9999;
+    padding: 0.5rem;
+    width: 70px;
+}
+
+.main-nav-burger.visible {
+    display: block;
+    position: fixed;
+    width: 390px;
+    height: 460px;
+    z-index: 9998;
+    background-color: var(--GreyBlue);
+}
+
+nav img {
+    padding-left: 9em;
+}
+
+nav ul {
+    z-index: 9998;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+}
+nav li a {
+    font-size: 1.5em;
+    padding-left: 1.3em;
+}
+
+
+/* welcome */
+
+#welcome {
+    padding-top: 0.5em;
+    width: 85%;
+}
+
+h1 {
+    padding: 0;
+}
+
+header section {
+    display: flex;
+    flex-direction: column;
+}
+
+header section div{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 1rem;
+    flex-direction: column;
+}
+
+header section p {
+    font-size: 1.2em;
+    width: 85%;
+}
+header section figure {
+    padding: 0;
+    margin: 0;
+}
+
+header section img {
+    width: 305px;
+    height: 288px;
+}
+} 
