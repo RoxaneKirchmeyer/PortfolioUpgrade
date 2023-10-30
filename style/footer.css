@@ -3,11 +3,6 @@ footer {
     padding: 1.5rem;
 }
 
-footer img {
-    width: 80px;
-    padding: 0.5rem;
-}
-
 footer p {
     display: flex;
     font-family: 'Montserrat', sans-serif;
@@ -25,4 +20,25 @@ footer div {
 footer i {
     font-size: 5em;
     align-items: center;
+}
+
+@media screen and (max-width:391px) {
+    footer {
+        padding: 1rem;
+    }
+
+    footer p {
+        justify-content: center;
+        margin: 0;
+        padding: 1.5em;
+    }
+
+    footer div {
+        width: 100%;
+        justify-content: center;
+    }
+
+    footer i {
+        font-size: 3em;
+    }
 }

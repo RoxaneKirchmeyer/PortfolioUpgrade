@@ -121,9 +121,11 @@ header section p {
     font-size: 2.8em;
     color: var(--Black);
     background-color: var(--GreyBlue);
-    z-index: 9999;
+    z-index: 10000;
     padding: 0.5rem;
-    width: 70px;
+    width: 42px;
+    top: 0;
+    left: 0;
 }
 
 .main-nav-burger.visible {
@@ -137,6 +139,7 @@ header section p {
 
 nav img {
     padding-left: 9em;
+    position: fixed;
 }
 
 nav ul {
@@ -147,7 +150,8 @@ nav ul {
 }
 nav li a {
     font-size: 1.5em;
-    padding-left: 1.3em;
+    padding-left: 1.6em;
+    text-align: center;
 }
 
 
@@ -155,7 +159,7 @@ nav li a {
 
 #welcome {
     padding-top: 0.5em;
-    width: 85%;
+    width: 100%;
 }
 
 h1 {
@@ -178,7 +182,7 @@ header section div{
 
 header section p {
     font-size: 1.2em;
-    width: 85%;
+    width: 100%;
 }
 header section figure {
     padding: 0;
@@ -186,7 +190,8 @@ header section figure {
 }
 
 header section img {
-    width: 305px;
-    height: 288px;
-}
+    width: 349px;
+    height: 309px;
 } 
+
+}

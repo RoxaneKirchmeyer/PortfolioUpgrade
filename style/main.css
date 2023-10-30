@@ -363,13 +363,15 @@ button:hover {
     form {
         margin: 0;
         padding: 0;
+        padding-bottom: 2em;
     }
 
     input {
         min-width: 0;
     }
 
-    /* textarea {
-
-    } */
+    /* réussir à le resize */
+    form textarea {
+        width: 300px;    
+    }
 }
